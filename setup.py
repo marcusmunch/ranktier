@@ -13,4 +13,5 @@ setup(name="ranktier",
 		"Natural Language :: English",
 		"Programming Language :: Python :: 2.7"],
 	author="Marcus Grünewald",
+	author_email="marcus@marcusmunch.dk",
 	packages=["ranktier"])
