@@ -8,3 +8,4 @@ python:
 
 script:
   - pip install .
+  - "python -c 'import ranktier; print(\"Rank 42 is: {}\".format(ranktier.ranktier(42)))'"
