@@ -9,11 +9,12 @@ Currently, the module can only be installed by downloading the repository locall
 
 Usage
 -----
-
+`ranktier` has one function:
 ```python
-import ranktier
-
-ranktier.ranktier(rank)
+>>> import ranktier
+>>> rank = 42
+>>> ranktier.ranktier(rank)
+'Archon [2]'
 ```
 
-`rank` has to be a two-digit number to work. Ranktier works regardless of `rank` being a `str`-type or `int`-type variable.
+`rank` has to be a two-digit number for ranktier to work. Ranktier works regardless of `rank` being a `str`-type or `int`-type variable.
