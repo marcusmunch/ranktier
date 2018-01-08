@@ -7,6 +7,7 @@ setup(name="ranktier",
 	description="A Dota rank tier converter",
 	long_description="Ranktier turns two-digit rank tier numbers into human-readable output.",
 	url="https://github.com/marcusmunch/ranktier",
+	license="GPLv3",
 	classifiers=[
 		"Development Status :: 5 - Production/Stable",
 		"Intended Audience :: Developers",
