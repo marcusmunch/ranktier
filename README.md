@@ -14,8 +14,6 @@ Setup
 
 It can also be installed by downloading the repo and running `pip install .`
 
-Note that `ranktier` requires [requests](http://python-requests.org), but the installer knows this. 😁 
-
 Usage
 -----
 `ranktier` has one function:
