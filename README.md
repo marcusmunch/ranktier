@@ -1,4 +1,4 @@
-ranktier
+ranktier [![Build Status](https://travis-ci.org/marcusmunch/ranktier.svg?branch=master)](https://travis-ci.org/marcusmunch/ranktier)
 ========
 ranktier converts `rank_tier` numbers from APIs like OpenDota to human-readable ranks
 
