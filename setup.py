@@ -2,6 +2,7 @@
 
 from setuptools import setup
 
+
 setup(name="ranktier",
 	version="1.1",
 	description="A Dota rank tier converter",
