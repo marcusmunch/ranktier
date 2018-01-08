@@ -4,8 +4,12 @@ ranktier converts `rank_tier` numbers from APIs like OpenDota to human-readable 
 
 Setup
 -----
-Currently, the module can only be installed by downloading the repository locally. From there, you can run
-`python setup ranktier`.
+`ranktier` can be installed from [PyPi](https://pypi.python.org/pypi):
+`pip install ranktier`
+
+It can also be installed by downloading the repo and running `pip install .`
+
+Note that `ranktier` requires [requests](http://python-requests.org), but the installer knows this. 😁 
 
 Usage
 -----
