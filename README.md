@@ -5,7 +5,7 @@ ranktier
 [![PyPI](https://img.shields.io/pypi/pyversions/ranktier.svg)](https://pypi.python.org/pypi/ranktier)
 [![PyPI](https://img.shields.io/pypi/l/ranktier.svg)](https://pypi.python.org/pypi/ranktier)
 
-ranktier converts `rank_tier` numbers from APIs like OpenDota to human-readable ranks
+ranktier converts `rank_tier` numbers from APIs like [OpenDota](https://OpenDota.com) to human-readable ranks
 
 Setup
 -----
