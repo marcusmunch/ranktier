@@ -16,12 +16,11 @@ It can also be installed by downloading the repo and running `pip install .`
 
 Usage
 -----
-`ranktier` has one function:
 ```python
 >>> import ranktier
->>> rank = 42
->>> ranktier.ranktier(rank)
-'Archon [2]'
+>>> r = ranktier.Rank(42)
+>>> print r
+Archon 2
 ```
 
 `rank` has to be a two-digit number for ranktier to work. Ranktier works regardless of `rank` being a `str`-type or `int`-type variable.
