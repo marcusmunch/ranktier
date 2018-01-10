@@ -1,3 +1,5 @@
+#!/usr/bin/env python
+
 def ranktier(rank):
     if rank == 'null':
         print("This profile has not yet calibrated!")
