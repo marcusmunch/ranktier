@@ -1,29 +1,40 @@
-def ranktier(rank):
-    if rank == 'null':
-        print("This profile has not yet calibrated!")
-        return None
+#!/usr/bin/env python
 
-    if type(rank) is int or type(rank) is float:
-        rank = str(rank)
+class Rank(object):
 
-    if not all([rank.isdigit(), len(rank) == 2]):
-        print("Something went wrong!\nRank input: %s\n" % rank)
-        return None
+    def __init__(self, rank):
+        if rank == 'null':
+            print("This profile has not yet calibrated!")
+            self.rank = None
+            return
 
-    return getrank(rank)
+        if type(rank) is int or type(rank) is float:
+            rank = str(rank)
+
+        if not all([rank.isdigit(), len(rank) == 2]):
+            print("Something went wrong!\nRank input: %s" % rank)
+            self.rank = None
+            return
+
+        self.rank = rank
 
 
-def getrank(rank):
-    readable_rank = []
+    def __str__(cls):
+        return str(cls.name)
 
-    ranks = { "1" : "Herald"
-            , "2" : "Guardian"
-            , "3" : "Crusader"
-            , "4" : "Archon"
-            , "5" : "Legend"
-            , "6" : "Ancient"
-            , "7" : "Divine" }
 
-    readable_rank.append("[%s]" % rank[1])
+    @property
+    def name(cls):
+        if cls.rank is None:
+            return None
 
-    return "{} [{}]".format(ranks[rank[0]], rank[1])
+
+        ranks = { "1" : "Herald"
+                , "2" : "Guardian"
+                , "3" : "Crusader"
+                , "4" : "Archon"
+                , "5" : "Legend"
+                , "6" : "Ancient"
+                , "7" : "Divine" }
+
+        return "{} [{}]".format(ranks[cls.rank[0]], cls.rank[1])
