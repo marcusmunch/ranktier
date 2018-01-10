@@ -28,6 +28,9 @@ class Rank(object):
 
     @property
     def name(cls):
+        if cls.rank is None:
+            return None
+
 
         ranks = { "1" : "Herald"
                 , "2" : "Guardian"
