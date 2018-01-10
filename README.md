@@ -20,7 +20,9 @@ Usage
 >>> import ranktier
 >>> r = ranktier.Rank(42)
 >>> print r
-Archon 2
+Archon [2]
 ```
+
+`r.name` can also be used, but returns the same as above.
 
 `rank` has to be a two-digit number for ranktier to work. Ranktier works regardless of `rank` being a `str`-type or `int`-type variable.
