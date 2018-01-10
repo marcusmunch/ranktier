@@ -19,6 +19,13 @@ class Rank(object):
         self.rank = rank
 
 
+    def __str__(cls):
+        if cls.rank is not None:
+            return str(cls.name)
+        else:
+            return "None"
+
+
     @property
     def name(cls):
 
