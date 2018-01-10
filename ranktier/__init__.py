@@ -20,10 +20,7 @@ class Rank(object):
 
 
     def __str__(cls):
-        if cls.rank is not None:
-            return str(cls.name)
-        else:
-            return "None"
+        return str(cls.name)
 
 
     @property
