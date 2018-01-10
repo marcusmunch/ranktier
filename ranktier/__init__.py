@@ -9,11 +9,7 @@ def ranktier(rank):
     if not all([rank.isdigit(), len(rank) == 2]):
         print("Something went wrong!\nRank input: %s\n" % rank)
         return None
-
-    return getrank(rank)
-
-
-def getrank(rank):
+    
     readable_rank = []
 
     ranks = { "1" : "Herald"
