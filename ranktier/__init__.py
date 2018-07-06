@@ -28,6 +28,8 @@ class Rank(object):
         if cls.rank is None:
             return None
 
+        elif cls.rank[0] == "8":
+            return "Immortal"
 
         ranks = { "1" : "Herald"
                 , "2" : "Guardian"
