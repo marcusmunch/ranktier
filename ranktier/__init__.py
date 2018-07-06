@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+
 class Rank(object):
 
     def __init__(self, rank):
@@ -18,23 +19,23 @@ class Rank(object):
 
         self.rank = rank
 
-
     def __str__(cls):
         return str(cls.name)
-
 
     @property
     def name(cls):
         if cls.rank is None:
             return None
 
+        elif cls.rank[0] == "8":
+            return "Immortal"
 
-        ranks = { "1" : "Herald"
-                , "2" : "Guardian"
-                , "3" : "Crusader"
-                , "4" : "Archon"
-                , "5" : "Legend"
-                , "6" : "Ancient"
-                , "7" : "Divine" }
+        ranks = {"1": "Herald",
+                 "2": "Guardian",
+                 "3": "Crusader",
+                 "4": "Archon",
+                 "5": "Legend",
+                 "6": "Ancient",
+                 "7": "Divine"}
 
         return "{} [{}]".format(ranks[cls.rank[0]], cls.rank[1])
