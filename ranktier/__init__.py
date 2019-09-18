@@ -16,14 +16,12 @@ class Rank(object):
 
         self.rank = rank
 
-
-    def __str__(cls):
-        return str(cls.name)
-
+    def __str__(self):
+        return str(self.name)
 
     @property
-    def name(cls):
-        if cls.rank is None:
+    def name(self):
+        if self.rank is None:
             return None
 
         ranks = {"1": "Herald",
@@ -34,5 +32,4 @@ class Rank(object):
                  "6": "Ancient",
                  "7": "Divine"}
 
-
-        return "{} [{}]".format(ranks[cls.rank[0]], cls.rank[1])
+        return "{} [{}]".format(ranks[self.rank[0]], self.rank[1])
