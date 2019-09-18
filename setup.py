@@ -1,11 +1,12 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import ranktier
 from setuptools import setup
 
 
 setup(name="ranktier",
-	version="1.2",
+	version=ranktier.VERSION,
 	description="A Dota rank tier converter",
 	long_description="Ranktier turns two-digit rank tier numbers into human-readable output.",
 	url="https://github.com/marcusmunch/ranktier",
