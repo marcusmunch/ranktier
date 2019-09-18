@@ -1,5 +1,3 @@
-#!/usr/bin/env python
-
 class Rank(object):
 
     def __init__(self, rank):
