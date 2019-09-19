@@ -7,4 +7,4 @@ python:
 
 script:
   - pip install .
-  - "python test/test.py"
+  - "python test/test.py $steam_id"
