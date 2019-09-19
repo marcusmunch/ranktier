@@ -11,6 +11,7 @@ setup(name="ranktier",
     version=ranktier.VERSION,
     description="A Dota rank tier converter",
     long_description=readme,
+    long_description_content_type='text/markdown',
     url="https://github.com/marcusmunch/ranktier",
     license="GPLv3",
     classifiers=[
