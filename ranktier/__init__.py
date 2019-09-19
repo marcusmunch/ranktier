@@ -13,7 +13,7 @@ class Rank(object):
         self.leaderboard = leaderboard
 
         if rank == 'null':
-            print("This profile has not yet calibrated!")
+            sys.stderr.write("This profile has not yet calibrated!\n")
             self.rank = None
             return
 
@@ -21,7 +21,7 @@ class Rank(object):
             rank = str(rank)
 
         if not all([rank.isdigit(), len(rank) == 2]) and not leaderboard:
-            print("Something went wrong!\nRank input: %s" % rank)
+            sys.stderr.write("Something went wrong!\nRank input: %s\n" % rank)
             self.rank = None
             return
 
@@ -72,7 +72,7 @@ class Player:
                     self.rank = Rank(profile["rank_tier"])
 
         except socket.timeout:  # API connection timed out
-            sys.stderr.write("Connection to OpenDota API timed out!")
+            sys.stderr.write("Connection to OpenDota API timed out!\n")
 
     def get_profile_data(self):
         req = urllib.request.Request(url="https://api.opendota.com/api/players/{}".format(self.friend_id),
