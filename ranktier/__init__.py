@@ -60,7 +60,9 @@ class Player:
         try:
             profile = self.get_profile_data()
 
-            self.personaname = profile["profile"]["personaname"]
+            if profile["profile"]["name"]:  # Name of pros
+                self.name = profile["profile"]["name"]
+            self.personaname = profile["profile"]["personaname"]  # Steam handle
             if profile["leaderboard_rank"]:
                 self.rank = Rank(profile["leaderboard_rank"], leaderboard=True)
             else:
