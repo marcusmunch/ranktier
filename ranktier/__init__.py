@@ -79,5 +79,5 @@ class Player:
                                      headers={"User-Agent": USER_AGENT})
 
         with urllib.request.urlopen(req, timeout=20) as resp:
-            data = json.loads(resp.read())
+            data = json.loads(resp.read().decode("utf-8"))
             return data
