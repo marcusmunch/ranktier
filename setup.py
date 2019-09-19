@@ -4,11 +4,13 @@
 import ranktier
 from setuptools import setup
 
+with open("README.md", "r") as f:
+	readme = f.read()
 
 setup(name="ranktier",
 	version=ranktier.VERSION,
 	description="A Dota rank tier converter",
-	long_description="Ranktier turns two-digit rank tier numbers into human-readable output.",
+	long_description=readme,
 	url="https://github.com/marcusmunch/ranktier",
 	license="GPLv3",
 	classifiers=[
