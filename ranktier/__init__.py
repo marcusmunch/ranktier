@@ -59,7 +59,6 @@ class Player:
         self.friend_id = friend_id
         try:
             profile = self.get_profile_data()
-            print(profile)
 
             self.personaname = profile["profile"]["personaname"]
             if profile["leaderboard_rank"]:
