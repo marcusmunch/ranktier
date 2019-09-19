@@ -19,7 +19,7 @@ Usage
 ```python
 >>> import ranktier
 >>> r = ranktier.Rank(42)
->>> print r
+>>> print(r)
 Archon [2]
 ```
 
