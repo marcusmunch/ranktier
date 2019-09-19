@@ -1,13 +1,16 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import ranktier
 from setuptools import setup
 
+with open("README.md", "r") as f:
+	readme = f.read()
 
 setup(name="ranktier",
-	version="1.2",
+	version=ranktier.VERSION,
 	description="A Dota rank tier converter",
-	long_description="Ranktier turns two-digit rank tier numbers into human-readable output.",
+	long_description=readme,
 	url="https://github.com/marcusmunch/ranktier",
 	license="GPLv3",
 	classifiers=[
@@ -16,13 +19,11 @@ setup(name="ranktier",
 		"License :: OSI Approved :: GNU General Public License v3 (GPLv3)",
 		"Natural Language :: English",
 		"Operating System :: OS Independent",
-		"Programming Language :: Python :: 2",
-		"Programming Language :: Python :: 2.7",
 		"Programming Language :: Python :: 3",
-		"Programming Language :: Python :: 3.3",
 		"Programming Language :: Python :: 3.4",
 		"Programming Language :: Python :: 3.5",
 		"Programming Language :: Python :: 3.6",
+		"Programming Language :: Python :: 3.7"
 		],
 	author="Marcus Grünewald",
 	author_email="marcus@marcusmunch.dk",
