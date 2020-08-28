@@ -3,8 +3,8 @@ import socket
 import sys
 import urllib.request
 
-VERSION = "1.4.3"
-USER_AGENT = "ranktier/{}".format(VERSION)
+__version__ = "1.4.3"
+USER_AGENT = "ranktier/{}".format(__version__)
 
 
 class Rank(object):

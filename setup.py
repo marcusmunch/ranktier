@@ -8,7 +8,7 @@ with open("README.md", "r") as f:
     readme = f.read()
 
 setup(name="ranktier",
-    version=ranktier.VERSION,
+    version=ranktier.__version__,
     description="A Dota rank tier converter",
     long_description=readme,
     long_description_content_type='text/markdown',
