@@ -3,7 +3,7 @@ import socket
 import sys
 import urllib.request
 
-__version__ = "1.4.4"
+__version__ = "1.4.5"
 USER_AGENT = "ranktier/{}".format(__version__)
 
 
